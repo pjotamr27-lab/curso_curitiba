@@ -1,0 +1,12 @@
+{
+  "name": "Meu Concurso Curitiba",
+  "short_name": "Meu Concurso",
+  "description": "Estudos para Agente Administrativo de Curitiba",
+  "lang": "pt-BR",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f3f6fb",
+  "theme_color": "#173b6c",
+  "icons": [{"src":"icon.svg","sizes":"any","type":"image/svg+xml","purpose":"any maskable"}]
+}

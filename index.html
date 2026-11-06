@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#173b6c">
+  <meta name="description" content="Aplicativo de estudos para Agente Administrativo de Curitiba">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <title>Meu Concurso Curitiba</title>
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand"><div class="logo">MC</div><div><strong>Meu Concurso Curitiba</strong><small>Agente Administrativo · FAFIPA</small></div></div>
+    <span class="offline" id="connection">Verificando conexão…</span>
+  </header>
+  <main>
+    <section class="welcome">
+      <p class="eyebrow">SUA PREPARAÇÃO COMEÇA AQUI</p>
+      <h1>Estude no seu ritmo.</h1>
+      <p>Conteúdo, questões e simulados para organizar sua preparação.</p>
+      <div class="progress"><div><span>Seu progresso</span><b id="progress-label">0 de 0 questões</b></div><div class="track"><i id="progress-bar"></i></div></div>
+    </section>
+    <section class="section"><div class="section-heading"><div><p class="eyebrow">ÁREA DE ESTUDOS</p><h2>Matérias</h2></div><span class="pill">6 áreas</span></div>
+      <div class="subjects" id="subjects"></div>
+    </section>
+    <section class="section"><div class="section-heading"><div><p class="eyebrow">PRATIQUE</p><h2>Questão do dia</h2></div></div>
+      <article class="question-card" id="question-card"><div class="question-meta">LÍNGUA PORTUGUESA · ESTILO FAFIPA</div><h3>Em “Os alunos entregaram os documentos ao diretor”, os termos “os documentos” e “ao diretor” são, respectivamente:</h3>
+        <div class="answers" id="answers">
+          <button data-answer="A">A) sujeito e objeto direto</button>
+          <button data-answer="B">B) objeto indireto e objeto direto</button>
+          <button data-answer="C">C) complemento nominal e adjunto adnominal</button>
+          <button data-answer="D">D) predicativo do sujeito e adjunto adverbial</button>
+          <button data-answer="E">E) objeto direto e objeto indireto</button>
+        </div><p class="feedback" id="feedback" aria-live="polite"></p>
+      </article>
+    </section>
+    <section class="section tools"><div class="tool"><span>📚</span><div><b>Apostilas</b><small>Conteúdo organizado por disciplina</small></div><span class="coming">Em preparação</span></div><div class="tool"><span>📝</span><div><b>Simulados</b><small>Treine com provas completas</small></div><span class="coming">Em preparação</span></div><div class="tool"><span>📊</span><div><b>Desempenho</b><small>Acompanhe seus acertos e erros</small></div><span class="coming">Básico ativo</span></div></section>
+    <p class="note">Dica: abra este aplicativo com internet na primeira vez para carregar os arquivos. Depois, esta versão básica poderá abrir offline neste aparelho.</p>
+  </main>
+  <nav class="bottom-nav"><a class="active" href="#top">⌂<span>Início</span></a><a href="#subjects">▦<span>Matérias</span></a><a href="#question-card">✓<span>Questões</span></a></nav>
+  <script src="app.js"></script>
+</body>
+</html>
